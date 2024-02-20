@@ -89,16 +89,22 @@
     left: 0;
   }
 }
-.icon-menu ::before{
+.icon-menu ::before {
   top: 0;
-
 }
-.icon-menu ::after{
+.icon-menu ::after {
   bottom: 0;
-
 }
 .icon-menu__line {
   top: calc(50% - 0.0625rem);
+}
+.menu-open .icon-menu::before {
+  top: calc(50% - 0.0625rem);
+  transform: rotate(-180deg);
+}
+.menu-open .icon-menu::after {
+  bottom: calc(50% - 0.0625rem);
+  transform: rotate(45deg);
 }
 /* ----------------------------------------------- */
 .page {

@@ -1,8 +1,8 @@
 "use strict";
 document.addEventListener("click", documentActions);
 function documentActions(e) {
-  if (targetElement.closest(".icon-menu")){
-document.documentElement.classList.toggle('menu-open');
+  if (targetElement.closest(".icon-menu")) {
+    document.documentElement.classList.toggle("menu-open");
   }
   const targetElement = e.target;
   if (targetElement.closest("[data-goto]")) {
@@ -10,10 +10,10 @@ document.documentElement.classList.toggle('menu-open');
     const gotoElement = document.querySelector(goto);
     const headerHeight = document.querySelector(".header").offsetHeight;
     if (gotoElement) {
-        window.scrollTo({
-            top:gotoElement.offsetTop - (headerHeight + 15),
-            behavior:"smooth"
-        });
+      window.scrollTo({
+        top: gotoElement.offsetTop - (headerHeight + 15),
+        behavior: "smooth",
+      });
     }
     e.preventDefault();
   }
