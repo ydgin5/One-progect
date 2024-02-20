@@ -1,8 +1,8 @@
 "use strict";
 document.addEventListener("click", documentActions);
 function documentActions(e) {
-  if (targetElement.closest(".ico")){
-
+  if (targetElement.closest(".icon-menu")){
+document.documentElement.classList.toggle('menu-open');
   }
   const targetElement = e.target;
   if (targetElement.closest("[data-goto]")) {
