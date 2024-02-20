@@ -68,11 +68,37 @@
     flex-direction: column;
     gap: 2.1875rem;
   }
-  .menu__link{
+  .menu__link {
     font: size 1.875rem;
   }
+  .icon-menu {
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 1.875rem;
+    height: 1.125rem;
+  }
+  .icon-menu__line,
+  .icon-menu ::before,
+  .icon-menu::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 0.125rem;
+    width: 100%;
+    left: 0;
+  }
+}
+.icon-menu ::before{
+  top: 0;
+
+}
+.icon-menu ::after{
+  bottom: 0;
+
 }
 .icon-menu__line {
+  top: calc(50% - 0.0625rem);
 }
 /* ----------------------------------------------- */
 .page {
