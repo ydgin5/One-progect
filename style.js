@@ -6,6 +6,9 @@ function documentActions(e) {
     document.documentElement.classList.toggle("menu-open");
   }
   if (targetElement.closest("[data-goto]")) {
+    document.documentElement.classList.contains("menu-open")
+      ? document.documentElement.classList.remove("menu-open")
+      : null;
     const goto = targetElement.closest("[data-goto]").dataset.goto;
     const gotoElement = document.querySelector(goto);
     const headerHeight = document.querySelector(".header").offsetHeight;

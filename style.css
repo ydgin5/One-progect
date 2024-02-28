@@ -45,6 +45,8 @@
 .icon__menu {
 }
 .menu__body {
+  position: relative;
+  z-index: 5;
 }
 .menu__list {
   display: flex;
@@ -77,6 +79,7 @@
     background-color: #262c37;
     padding: 6.25rem 0.9375rem 1.25rem 0.9375rem;
     overflow: auto;
+    z-index: 1;
   }
   .menu-open .menu__body {
     left: 0;
@@ -133,6 +136,8 @@
 .page {
   padding-top: 6.25rem;
   padding-bottom: 1.5625rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .page__container {
   line-height: 1.5;
